@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.menu{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+.menu nav{
+    width: 1440px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.menu nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.menu nav a:hover{
+    background-color: rgb(8,8,8);
+    text-decoration: underline;
+}
+.menu nav ul{
+    width: 720px;
+    height: 100px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.perfil{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(245,245,245);
+}
+.perfil_content{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.perfil_content > div{
+    margin: 10px;
+}
+.font{
+    font-family: 'Roboto', sans-serif;
+}
+.texto_1 p{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.titulo_1 h1{
+    font-size: 50px;
+}
+.texto_2 p{
+    font-size: 18px;
+}
+.botao_1{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: rgb(39,39,39);
+    padding: 0;
+    width: 250px;
+    height: 70px;
+}
+.botao_1 h2{
+    padding-top: 20px;
+    padding-left: 21.44px;
+}
+.info_content{
+    width: 1440px;
+    height: 600px;
+    margin:0 auto;
+}
+.titulo_2 h1{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 65px;
+}
+.info_text{
+    width: 600px;
+    height: 400px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.info_text > div{
+    margin: 15px
+}
+.titulo_3{
+    font-size: 18px;
+}
+.texto_3{
+    font-size: 22px;
+}
+.botao_2{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: rgb(39,39,39);
+    padding: 0;
+    width: 250px;
+    height: 70px;
+}
+.botao_2 h2{
+    padding-top: 14.9px;
+    padding-left: 33.44px;
+}
+.info_chart{
+    width: 600px;
+    height: 400px;
+    float: left;
+    padding-left: 199px;
+    margin: 0 auto; 
+}
+
+.info_chart li{
+    position: relative;
+    list-style: none;
+    margin: 70px 0;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+li:before{
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgba (196,196,196,1);
+    border-radius: 1000px;
+/*Não está funcionando. reason: N/A*/
+}
+li:after{
+    content: "";    
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: rgb(39,39,39);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+li.html:after{
+    animation-name: html;
+}
+@keyframes html {
+    to {
+        width: 80%;
+    }
+}
+li.designer:after{
+    animation-name: designer;
+}
+@keyframes designer {
+    to {
+        width: 60%;
+    }
+}
+
+li.wordpress:after{
+    animation-name: wordpress;
+}
+@keyframes wordpress {
+    to {
+        width: 65%;
+    }
+}   
+.item{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(245,245,245);
+}
+.item_content{
+    width: 1440px;
+    height: 600px;
+    margin: 0 auto;
+}
+.titulo_4 h1{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 65px;
+}
+.img_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_content > img{
+    margin: 15px;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+.rodape_container{
+    width: 1440px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 19px;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+.rodape_content p{
+    font-size: 18;
+    text-transform: none;
+}
